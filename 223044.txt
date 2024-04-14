@@ -1,0 +1,138 @@
+-----------------------4 (prasanje) --------------------------
+C:\Users\Dragana Trifunova>cd SI_2024_lab1_223044
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git init
+
+[vleguvam vo lokalniot repozitorium i go pravam da bide git repozitorium]
+-------------    5 -----------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git remote add origin https://github.com/draganatrifunova/SI_2024_lab1_223044.git
+
+[go povrzuvam mojot lokalen repozitorium so dalecinskiot. Imeto na dalecinskiot repozitorium ke bide "origin" a, na dadeniot link se naoga istiot]
+------------------- 6 -------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git add README.md
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git commit -m "Initial commit"
+[staged, commited]
+--------------------- 7 -------------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git add SILab1Main.java SILab1_1.java SILab1_2.java
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git commit -m "Add starter code"
+
+[staged, commited]
+--------------------------- 8 ---------------------------------
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin master
+
+[se sto e lokalno na grankata master go stavam da grankata master na dalecinskiot repozitorium]
+---------------------------- 9 ----------------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git branch bug1
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git branch bug2
+
+[2 novi granki razgranuvam od master]
+---------------------------- 10 ----------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout bug1
+
+[od master se prefrluvam na bug1]
+----------------------------- 11 -------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git add SILab1_1.java
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git commit -m "Fix wrong condition in filterOddLenghtStrings"
+
+[popravam greski vo SILab1_1.java, pa zatoa sto e modified, go godavam (staged) i potoa commit]
+----------------------------- 12 --------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout bug2
+
+[zaminuvam od bug1, vleguvam vo grankata bug2]
+------------------------------ 13 --------------------------------
+git add SILab1_2.java
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git commit -m "Fix wrong condition in makeBigStringFrom"
+
+[pravam izmeni na SILab1_2.java pa bideiki e modified go dodavam na scena, pa commit]
+------------------------------- 14 -----------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout bug1
+
+[odam na bug1 grankata]
+-------------------------------- 15 ---------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git add SILab1Main.java
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git commit -m "Call method filterOddLengthStrings in main class"
+
+[pravam izmeni vo main, bideiki e modified pravam git add, pa potoa gi komituvam promenite]
+-------------------------------- 16 -------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout bug2
+
+[se prefrlam na grankata bug2]
+-------------------------------- 17 ---------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git add SILab1Main.java
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git commit -m "Call method makeBigStringFrom in main class"
+
+[pravam izmeni vo main, pa poradi "modified" moram da napravam prvo git add, pa commit]
+------------------------- 18 ----------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin bug1
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin bug2
+
+[se sto imam na bug1 i bug2 lokalno go stavam na remote-repoto (ovde nema potreba master grankata da ja sinhronizirame zatoa sto nema promeni)]
+--------------------------- 19 -----------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout master
+
+[se prefrlam na master grankata]
+---------------------------- 20 -----------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git merge bug1
+
+Nema prostor za konflikti, zatoa sto na master otkako e formirana bug1 nema komiti. Spojuvanjeto ke bide po fast-forward strategija
+
+---------------------------- 21 ---------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin master
+
+[se sto e na master lokalno, stavi go na remote-repoto (drugite granki nema potreba da se sinhroniziraat --> nemaat izmeni)]
+----------------------------- 22 ---------------------------------
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout bug2
+
+[prefrli se na bug2 grankata]
+-------------------------------- 23 ------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git rebase master
+CONFLICT (vo main funkcijata go ostaviv delot za povikuvanje na makeBigStringFrom,
+odnosto ona sto bese na main i branch1 vo 16 red go izbrisav a, go zadrzav 
+ona sto bese na bug2)
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git add SILab1Main.java
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git rebase --continue
+
+Ima konflikti, zatoa sto po razgranuvanjeto na bug2 vo master grankata imalo komiti i tie komiti se protivrecni so onie vo bug2. Odnosno vo istite linii od kodot ima razlicni naredbi,
+pa ovde mora da napravime eden kompromis i da odlucime dali ke gi ostavime naredbite od master, dali naredbite od bug2 ili pak ke izmesame nesto i od dvete.
+Ovie cekori definitivno ke se izvrsat so recursive starategy zatoa sto ima komiti i na dvete granki.
+--------------------------------- 24 -----------------------------------
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git checkout master
+
+[prefrli se na master grankata]
+---------------------------------- 25 ---------------------------------
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git merge bug2
+
+Nema prostor za konflikt, zatoa sto vo bug2 ima napraveno git rebase master po sto sodrzinata na bug2 bi bila:
+3.Komitite na bug2 koi gi nema na master
+2. Komitite na master koi gi nema na bug2
+1. Site zaednicki komiti
+
+A sodrzinata na master e:
+2. Komitite na master koi gi nema na bug2
+1. Site zaednicki komiti
+
+Pa ovde e dovolno samo edno fast-forward zatoa sto na master NE POSTOJAT drugi komiti osven zaednickite so bug2
+---------------------------------- 26 27 ---------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin master
+//ZA BUG 1 NEMA POTREBA ZATOA STO NEMA PROMENI
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin bug2 [rejected]  ---> poradi rebase
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git pull origin bug2   ---> se sto e na dalecinskoto repo na grankata bug2 stavi na lokalnoto repo na grankata bug2
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git push origin bug2 --force
+
+[za komandata git push origin bug2 --force mora da bide so "--force" koja e opcionalna naredba, zatoa sto prethodno na bug2 imame napraveno rebase, pa mora da gi prezapiseme istoriskite 
+promeni na odaleceniot repozitorium so tie promeni sto se lokalno]
+---------------------------------- 28 -----------------------------------
+Za git logovi na sekoj branch, treba da se vleze vo branchot ("git checkout master", "git checkout bug1" ili pak "git checkout bug2") i na istiot da se napravi "git log" za da dobieme 
+celosna slika za istorijata na komitite
+
+
+
+

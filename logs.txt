@@ -1,0 +1,112 @@
+-------------------------------- MASTER ------------------------------------------------------
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git log
+commit bf9219476c5bdcd2ce6258631670eb51c9cac62a (HEAD -> master)
+Merge: fa8f6d5 44d3e24
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 09:15:52 2024 +0200
+
+    One more commit  because I make 1 empty line more
+
+commit fa8f6d5d1f50312949c1a6e3cecaf97d50c0588f (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 08:03:42 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 0dc284d7542557c6619043318fadfe108a86d542
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:46:57 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 0bb4412d16c0465316beba6e2147488ddca9eed4 (origin/bug1, bug1)
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:54:41 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 4d1d4c66e04786a121684d82b257e68881c37d6b
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:39:05 2024 +0200
+
+    Fix wrong condition in filterOddLenghtStrings
+
+commit 880d10204305f56c921c43de42f5d57eba97cd4c
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:21:24 2024 +0200
+
+    Add starter code
+
+commit beb8335d0c8ca4d1f24fbde2d8344399d29b3250
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:10:49 2024 +0200
+
+    Initial commit
+
+------------------------------------------------- BUG 1 --------------------------------------------------
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git log
+commit 0bb4412d16c0465316beba6e2147488ddca9eed4 (HEAD -> bug1, origin/bug1)
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:54:41 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 4d1d4c66e04786a121684d82b257e68881c37d6b
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:39:05 2024 +0200
+
+    Fix wrong condition in filterOddLenghtStrings
+
+commit 880d10204305f56c921c43de42f5d57eba97cd4c
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:21:24 2024 +0200
+
+    Add starter code
+
+commit beb8335d0c8ca4d1f24fbde2d8344399d29b3250
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:10:49 2024 +0200
+
+    Initial commit
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>
+
+------------------------------------------------- BUG 2 --------------------------------------------------
+
+C:\Users\Dragana Trifunova\SI_2024_lab1_223044>git log
+commit fa8f6d5d1f50312949c1a6e3cecaf97d50c0588f (HEAD -> bug2, origin/master, origin/bug2)
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 08:03:42 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 0dc284d7542557c6619043318fadfe108a86d542
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:46:57 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 0bb4412d16c0465316beba6e2147488ddca9eed4 (origin/bug1, bug1)
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:54:41 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 4d1d4c66e04786a121684d82b257e68881c37d6b
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:39:05 2024 +0200
+
+    Fix wrong condition in filterOddLenghtStrings
+
+commit 880d10204305f56c921c43de42f5d57eba97cd4c
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:21:24 2024 +0200
+
+    Add starter code
+
+commit beb8335d0c8ca4d1f24fbde2d8344399d29b3250
+Author: Dragana Trifunova <draganatrifunova1@gmail.com>
+Date:   Sun Apr 14 07:10:49 2024 +0200
+
+    Initial commit
